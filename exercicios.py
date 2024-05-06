@@ -1,4 +1,4 @@
-from etl import calcular_media, valor_acima_do_limite
+from etl import calcular_media, valor_acima_do_limite, valores_unico
 
 #exercico 01
 lista: list = [44,88,100,2]
@@ -15,3 +15,11 @@ lista_produto: list[dict] = [{"produto":"perfume","valor": 100},{"produto":"note
 produtos_limite: list[dict] = valor_acima_do_limite(lista_produto)
 
 print(produtos_limite)
+
+
+# exercio 03
+lista_duplicados: list = [1,2,3,1]
+
+lista_unica: list = valores_unico(lista_duplicados)
+
+print(lista_unica)
